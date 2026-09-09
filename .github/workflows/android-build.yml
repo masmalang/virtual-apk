@@ -21,8 +21,8 @@ jobs:
         distribution: 'temurin'
         cache: gradle
 
-    - name: Setup NDK r25
-      uses: natsam/setup-ndk@v1
+    - name: Setup NDK
+      uses: nathanm/setup-ndk@v1
       with:
         ndk-version: r25c
 
