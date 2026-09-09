@@ -21,10 +21,10 @@ jobs:
         distribution: 'temurin'
         cache: gradle
 
-    - name: Setup Android SDK & NDK
-      uses: android-actions/setup-android@v3
+    - name: Setup NDK r25
+      uses: natsam/setup-ndk@v1
       with:
-        packages: 'ndk;25.0.13046064'
+        ndk-version: r25c
 
     - name: Accept Android Licenses
       run: yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
