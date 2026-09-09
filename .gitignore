@@ -1,0 +1,6 @@
+
+github_push.py
+*.pyc
+__pycache__/
+.env
+*.log
